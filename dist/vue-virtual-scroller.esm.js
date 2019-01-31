@@ -657,7 +657,7 @@ var Scroller = {
         var current = void 0;
         for (var i = 0, l = items.length; i < l; i++) {
           current = items[i][field] || minItemHeight;
-          accumulator += current;
+          accumulator += current + 8;
           heights[i] = { accumulator: accumulator, height: current };
         }
         return heights;
